@@ -22,6 +22,4 @@ extension Person: Equatable {
     static func == (lhs: Person, rhs: Person) -> Bool {
         return lhs.uuid == rhs.uuid
     }
-    
-    
 }

@@ -46,7 +46,7 @@ class PersonController {
         }
     }
     
-    func loadFromPErsistenceStore() {
+    func loadFromPersistenceStore() {
         do {
             let data = try Data(contentsOf: createPersistenceStore())
             people = try JSONDecoder().decode([Person].self, from: data)
